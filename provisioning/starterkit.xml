@@ -833,7 +833,7 @@
         }
       </pnp:Theme>
     </pnp:ProvisioningTemplate>
-    <pnp:ProvisioningTemplate ID="STARTERKIT-MARKETING-THEME" Version="1.0" BaseSiteTemplate="SITEPAGEPUBLISHING#0" DisplayName="StarterKit Theme" Description="" TemplateCultureInfo="1033">
+    <pnp:ProvisioningTemplate ID="STARTERKIT-MARKETING-THEME" Version="1.0" BaseSiteTemplate="SITEPAGEPUBLISHING#0" DisplayName="StarterKit Theme" Description="">
       <pnp:Theme Name="StarterKit Marketing Theme" IsInverted="false">
         {
         "neutralQuaternaryAlt": "#dadada",

@@ -2,11 +2,11 @@
 <pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema" Author="SharePoint PnP" Generator="SharePoint PnP" Version="1.0" Description="SharePoint Starter Kit" DisplayName="SharePoint Starter Kit" ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/SP-Starter-Kit/sp-starter-kit-front-page-16x9.png">
   <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.1.1809.0, Culture=neutral, PublicKeyToken=null">
     <pnp:Parameters>
-      <pnp:Parameter Key="Company">Contoso Electronics</pnp:Parameter>
-      <pnp:Parameter Key="PORTALURL">/sites/contosoportal</pnp:Parameter>
-      <pnp:Parameter Key="MARKETINGALIAS">contosomarketing</pnp:Parameter>
-      <pnp:Parameter Key="HRALIAS">contosohr</pnp:Parameter>
-      <pnp:Parameter Key="WeatherCity">Seattle</pnp:Parameter>
+      <pnp:Parameter Key="Company">BestCIT Electronics</pnp:Parameter>
+      <pnp:Parameter Key="PORTALURL">/sites/BestCITportal</pnp:Parameter>
+      <pnp:Parameter Key="MARKETINGALIAS">BestCITmarketing</pnp:Parameter>
+      <pnp:Parameter Key="HRALIAS">BestCIThr</pnp:Parameter>
+      <pnp:Parameter Key="WeatherCity">Paris</pnp:Parameter>
       <pnp:Parameter Key="StockSymbol">MSFT</pnp:Parameter>
       <pnp:Parameter Key="lcid">1033</pnp:Parameter>
     </pnp:Parameters>
@@ -90,14 +90,14 @@
               <pnp:Term Name="Contacts" ID="a359ee29-cf72-4235-a4ef-1ed96bf4eaea" Description="" SourceTermId="a359ee29-cf72-4235-a4ef-1ed96bf4eaea">
                 <pnp:Terms />
                 <pnp:LocalCustomProperties>
-                  <pnp:Property Key="_Sys_Nav_SimpleLinkUrl" Value="https://intranet.contoso.com/Contacts" />
+                  <pnp:Property Key="_Sys_Nav_SimpleLinkUrl" Value="https://intranet.BestCIT.com/Contacts" />
                   <pnp:Property Key="PnP-CollabFooter-Icon" Value="EditMail" />
                 </pnp:LocalCustomProperties>
               </pnp:Term>
               <pnp:Term Name="Legal Policies" ID="60d165e6-8cb1-4c20-8fad-80067c4ca767" Description="" SourceTermId="60d165e6-8cb1-4c20-8fad-80067c4ca767">
                 <pnp:Terms />
                 <pnp:LocalCustomProperties>
-                  <pnp:Property Key="_Sys_Nav_SimpleLinkUrl" Value="https://intranet.contoso.com/LegalPolicies" />
+                  <pnp:Property Key="_Sys_Nav_SimpleLinkUrl" Value="https://intranet.BestCIT.com/LegalPolicies" />
                   <pnp:Property Key="PnP-CollabFooter-Icon" Value="Lock" />
                 </pnp:LocalCustomProperties>
               </pnp:Term>
@@ -106,13 +106,13 @@
                   <pnp:Term Name="Expense Reports" ID="30f4c129-6886-406c-911a-1395250d690f" Description="" SourceTermId="30f4c129-6886-406c-911a-1395250d690f">
                     <pnp:Terms />
                     <pnp:LocalCustomProperties>
-                      <pnp:Property Key="_Sys_Nav_SimpleLinkUrl" Value="https://downloads.contoso.com/ExpenseReports" />
+                      <pnp:Property Key="_Sys_Nav_SimpleLinkUrl" Value="https://downloads.BestCIT.com/ExpenseReports" />
                     </pnp:LocalCustomProperties>
                   </pnp:Term>
                   <pnp:Term Name="Time Reports" ID="bef5028a-1dff-43b7-b57d-2aefd3f7b814" Description="" SourceTermId="bef5028a-1dff-43b7-b57d-2aefd3f7b814">
                     <pnp:Terms />
                     <pnp:LocalCustomProperties>
-                      <pnp:Property Key="_Sys_Nav_SimpleLinkUrl" Value="https://downloads.contoso.com/TimeReports" />
+                      <pnp:Property Key="_Sys_Nav_SimpleLinkUrl" Value="https://downloads.BestCIT.com/TimeReports" />
                     </pnp:LocalCustomProperties>
                   </pnp:Term>
                   <pnp:Term Name="WebMail" ID="269c23e2-f34e-438a-adf0-22d11e064de5" Description="" SourceTermId="269c23e2-f34e-438a-adf0-22d11e064de5">
@@ -257,7 +257,7 @@
       </pnp:Lists>
     </pnp:ProvisioningTemplate>
     <pnp:ProvisioningTemplate ID="ROOT-TEMPLATE" Version="1.0" BaseSiteTemplate="SITEPAGEPUBLISHING#0" ImagePreviewUrl="https://preview.png" DisplayName="{Company} Technologies" Description="" Scope="RootSite" TemplateCultureInfo="1033">
-      <pnp:WebSettings WelcomePage="SitePages/Home.aspx" Title="{parameter:Company}" SiteLogo="{site}/SiteAssets/contoso_sitelogo.png" />
+      <pnp:WebSettings WelcomePage="SitePages/Home.aspx" Title="{parameter:Company}" SiteLogo="{site}/SiteAssets/BestCIT_sitelogo.png" />
       <pnp:Navigation EnableTreeView="false" CreateFriendlyUrlsForNewPages="false" AddNewPagesToNavigation="false">
         <pnp:GlobalNavigation NavigationType="Structural">
           <pnp:StructuralNavigation RemoveExistingNodes="true">
@@ -403,7 +403,7 @@
             </pnp:Section>
             <pnp:Section Order="3" Type="TwoColumnLeft">
               <pnp:Controls>
-                <pnp:CanvasControl WebPartType="DocumentEmbed" JsonControlData="{ &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;annotation&quot;:&quot;Latest quarterly company presentation&quot;,&quot;title&quot;:&quot;PowerPoint Presentation&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;serverRelativeUrl&quot;:&quot;{site}/{resource:SharedDocumentsFolder}/Contoso_Report.pptx&quot;,&quot;wopiurl&quot;:&quot;{hosturl}{site}/_layouts/15/WopiFrame.aspx?sourcedoc={{fileuniqueid:{resource:SharedDocumentsFolder}/contoso_report.pptx}}&amp;action=interactivepreview&quot;}}, &quot;properties&quot;: {&quot;authorName&quot;:&quot;Vesa Juvonen&quot;,&quot;chartitem&quot;:&quot;&quot;,&quot;endrange&quot;:&quot;&quot;,&quot;excelSettingsType&quot;:&quot;&quot;,&quot;file&quot;:&quot;{hosturl}{site}/Shared Documents/Contoso_Report.pptx&quot;,&quot;listId&quot;:&quot;{listid:Documents}&quot;,&quot;modifiedAt&quot;:&quot;2018-05-14T13:40:02+02:00&quot;,&quot;photoUrl&quot;:&quot;/_layouts/15/userphoto.aspx?size=S&amp;accountname=vesaj%40officedevpnp.onmicrosoft.com&quot;,&quot;rangeitem&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;startPage&quot;:1,&quot;startrange&quot;:&quot;&quot;,&quot;tableitem&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:/shared documents/contoso_report.pptx}&quot;,&quot;wdallowinteractivity&quot;:true,&quot;wdhidegridlines&quot;:true,&quot;wdhideheaders&quot;:true,&quot;webId&quot;:&quot;{siteid}&quot;}}" ControlId="b7dd04e1-19ce-4b24-9132-b60a1c2b910d" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="DocumentEmbed" JsonControlData="{ &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;annotation&quot;:&quot;Latest quarterly company presentation&quot;,&quot;title&quot;:&quot;PowerPoint Presentation&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;serverRelativeUrl&quot;:&quot;{site}/{resource:SharedDocumentsFolder}/BestCIT_Report.pptx&quot;,&quot;wopiurl&quot;:&quot;{hosturl}{site}/_layouts/15/WopiFrame.aspx?sourcedoc={{fileuniqueid:{resource:SharedDocumentsFolder}/BestCIT_report.pptx}}&amp;action=interactivepreview&quot;}}, &quot;properties&quot;: {&quot;authorName&quot;:&quot;Vesa Juvonen&quot;,&quot;chartitem&quot;:&quot;&quot;,&quot;endrange&quot;:&quot;&quot;,&quot;excelSettingsType&quot;:&quot;&quot;,&quot;file&quot;:&quot;{hosturl}{site}/Shared Documents/BestCIT_Report.pptx&quot;,&quot;listId&quot;:&quot;{listid:Documents}&quot;,&quot;modifiedAt&quot;:&quot;2018-05-14T13:40:02+02:00&quot;,&quot;photoUrl&quot;:&quot;/_layouts/15/userphoto.aspx?size=S&amp;accountname=vesaj%40officedevpnp.onmicrosoft.com&quot;,&quot;rangeitem&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;startPage&quot;:1,&quot;startrange&quot;:&quot;&quot;,&quot;tableitem&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:/shared documents/BestCIT_report.pptx}&quot;,&quot;wdallowinteractivity&quot;:true,&quot;wdhidegridlines&quot;:true,&quot;wdhideheaders&quot;:true,&quot;webId&quot;:&quot;{siteid}&quot;}}" ControlId="b7dd04e1-19ce-4b24-9132-b60a1c2b910d" Order="2" Column="1" />
                 <pnp:CanvasControl WebPartType="Custom" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;temperatureUnit&quot;:&quot;F&quot;,&quot;location&quot;:{&quot;latitude&quot;:28.538,&quot;longitude&quot;:-81.377,&quot;name&quot;:&quot;Orlando, United States&quot;}}}" ControlId="868ac3c3-cad7-4bd6-9a1c-14dc5cc8e823" Order="1" Column="2" />
                 <pnp:CanvasControl WebPartType="Custom" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;stockSymbol&quot;:&quot;{parameter:StockSymbol}&quot;,&quot;autoRefresh&quot;:false,&quot;demo&quot;:true}}" ControlId="50256fc2-a28f-4544-900e-32724d32bc7f" Order="2" Column="2" />
               </pnp:Controls>
@@ -745,7 +745,7 @@
           <!-- alertNotification -->
           <pnp:CustomAction Name="AlertNotification" Location="ClientSideExtension.ApplicationCustomizer" ClientSideComponentId="aa8dd198-e2ee-45c5-b746-821d001bb0e1" RegistrationType="None" />
           <!-- portalFooter -->
-          <pnp:CustomAction Name="PortalFooter" Location="ClientSideExtension.ApplicationCustomizer" ClientSideComponentId="b8eb4ec9-934a-4248-a15f-863d27f94f60" RegistrationType="None" ClientSideComponentProperties="{&quot;linksListTitle&quot;:&quot;PnP-PortalFooter-Links&quot;,&quot;copyright&quot;:&quot;Ⓒ Copyright Contoso, 2019-2020&quot;,&quot;support&quot;:&quot;support@contoso.com&quot;,&quot;personalItemsStorageProperty&quot;:&quot;PnP-CollabFooter-MyLinks&quot;}"/>
+          <pnp:CustomAction Name="PortalFooter" Location="ClientSideExtension.ApplicationCustomizer" ClientSideComponentId="b8eb4ec9-934a-4248-a15f-863d27f94f60" RegistrationType="None" ClientSideComponentProperties="{&quot;linksListTitle&quot;:&quot;PnP-PortalFooter-Links&quot;,&quot;copyright&quot;:&quot;Ⓒ Copyright BestCIT, 2019-2020&quot;,&quot;support&quot;:&quot;support@bestconsultingit.com.com&quot;,&quot;personalItemsStorageProperty&quot;:&quot;PnP-CollabFooter-MyLinks&quot;}"/>
           <!-- redirect -->
           <pnp:CustomAction Name="Redirect" Location="ClientSideExtension.ApplicationCustomizer" ClientSideComponentId="f5771a9e-283e-4525-a599-554e8b9e48c2" RegistrationType="None" />
           <!-- siteClassification -->
@@ -774,8 +774,8 @@
         <pnp:File Src="resources\images\WCO18_ITHelp_004.jpg" Overwrite="true" Folder="SiteAssets"></pnp:File>
         <pnp:File Src="resources\images\WCO18_whiteboard_002.jpg" Overwrite="true" Folder="SiteAssets"></pnp:File>
         <pnp:File Src="resources\images\Win17_15021_00_N9.jpg" Overwrite="true" Folder="SiteAssets"></pnp:File>
-        <pnp:File Src="resources\documents\contoso_report.pptx" Overwrite="true" Folder="{resource:SharedDocumentsFolder}"></pnp:File>
-        <pnp:File Src="resources\images\contoso_sitelogo.png" Overwrite="true" Folder="SiteAssets"></pnp:File>
+        <pnp:File Src="resources\documents\BestCIT_report.pptx" Overwrite="true" Folder="{resource:SharedDocumentsFolder}"></pnp:File>
+        <pnp:File Src="resources\images\BestCIT_sitelogo.png" Overwrite="true" Folder="SiteAssets"></pnp:File>
       </pnp:Files>
     </pnp:ProvisioningTemplate>
     <pnp:ProvisioningTemplate ID="COLLAB-TEMPLATE" Version="1.0" BaseSiteTemplate="GROUP#0" ImagePreviewUrl="https://preview.png" DisplayName="SP Portal Showcase" Description="" Scope="RootSite" TemplateCultureInfo="1033">
